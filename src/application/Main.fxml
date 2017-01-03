@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <StackPane prefHeight="100.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="result" prefHeight="142.0" prefWidth="400.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processOperator" prefHeight="60.0" prefWidth="60.0" text="AC">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="+/-">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="\%">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperator" prefHeight="60.0" prefWidth="60.0" text="/">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="60.0" prefWidth="60.0" text="7">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="60.0" prefWidth="60.0" text="8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="60.0" prefWidth="60.0" text="9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperator" prefHeight="60.0" prefWidth="60.0" text="*">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="60.0" prefWidth="60.0" text="4">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="60.0" prefWidth="60.0" text="5">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="60.0" prefWidth="60.0" text="6">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperator" prefHeight="60.0" prefWidth="60.0" text="-">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="60.0" prefWidth="60.0" text="1">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="60.0" prefWidth="60.0" text="2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="60.0" prefWidth="60.0" text="3">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperator" prefHeight="60.0" prefWidth="60.0" text="+">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleZeroAction" prefHeight="60.0" prefWidth="130.0" text="0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text=".">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperator" prefHeight="60.0" prefWidth="60.0" text="=">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
